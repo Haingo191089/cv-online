@@ -1,0 +1,31 @@
+// xl screen
+.h-100-vh {
+    height: 100vh;
+}
+
+.arrow-toggle {
+    height: 15px;
+    width: 15px;
+    border-top: 4px solid var(--color-black);
+    border-right: 4px solid var(--color-black);
+    transition: 0.25s;
+
+    &[show-body="true"] {
+        transform: rotate(135deg);
+    }
+
+    &[show-body="false"] {
+        transform: rotate(45deg);
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .word-break-all-xl {
+        word-break: break-all;
+    }
+}

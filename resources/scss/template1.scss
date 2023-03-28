@@ -1,0 +1,245 @@
+body {
+    background-color: var(--bg-white-blue) !important;
+}
+
+#template1 {
+    padding: 2rem;
+
+    .general {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+
+        .general-avatar {
+            height: 100px;
+            width: 100px;
+            background-image: url('http://localhost:8000/images/default_avatar.png');
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            background-position: top;
+            background-size: cover;
+        }
+
+        .general-infor {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-right: auto;
+
+            .general-infor__job-title {
+                color: var(--color-grey);
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .personal-infor, 
+    .contract,
+    .technology-skill,
+    .language {
+        ul {
+            padding-left: 0;
+            word-break: break-word;
+            li {
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+
+    .personal-infor {
+        ul {
+            li {
+                display: flex;
+                align-items: top;
+
+                .personal-infor-item__icon {
+                    margin-right: 16px;
+                }
+
+                .personal-infor-item__title {
+                    margin-bottom: 0;
+                    display: none;
+                }
+
+                .personal-infor-text {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .contract {
+        ul {
+            li {
+                display: flex;
+                align-items: top;
+
+                .contract-item__icon {
+                    margin-right: 16px;
+                }
+
+                .contract-item__title {
+                    margin-bottom: 0;
+                    display: none;
+                }
+
+                .contract-text {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .technology-skill {
+        ul {
+            li {
+                display: flex;
+                align-items: top;
+
+                .technology-skill-item__icon {
+                    margin-right: 16px;
+                }
+
+                .technology-skill-item__title {
+                    margin-bottom: 0;
+                    margin-right: 16px;
+                    flex-grow: 1;
+                }
+
+                .technology-skill-text {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .language {
+        ul {
+            list-style: circle;
+            li {
+                display: flex;
+                align-items: top;
+
+                .language-item__name {
+                    margin-bottom: 0;
+                    margin-right: 16px;
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+
+    .summary,
+    .objective,
+    .experience,
+    .education {
+        border-bottom: 1px solid var(--bs-border-color);
+    }
+
+    .objective,
+    .experience,
+    .education,
+    .employment {
+        margin-top: 1rem;
+    }
+
+    .summary {
+        .summary__content {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: var(--color-grey);
+        }
+    }
+
+    .objective {
+        .objective__content {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: var(--color-grey);
+        }
+    }
+
+    .experience {
+        ul {
+            li {
+                .experience-item__position,
+                .experience-item__project-name,
+                .experience-item__time {
+                    margin-bottom: 0;
+                }
+
+                .experience-item__position {
+                    font-weight: 700;
+                }
+
+                .experience-item__project-name {
+                    font-weight: 500;
+                }
+
+                .experience-item__time {
+                    font-weight: 500;
+                }
+
+                .experience-item__description {
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    color: var(--color-grey);
+                }
+            }
+        }
+    }
+
+    .education {
+        ul {
+            li {
+
+                .education-item__time {
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+
+                .education-item__content {
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    color: var(--color-grey);
+                }
+            }
+        }
+    }
+
+    .employment {
+        ul {
+            li {
+
+                .employment-item__time {
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+
+                .employment-item__content {
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    color: var(--color-grey);
+                }
+            }
+        }
+    }
+}
+
+// lg screen
+@media only screen and (max-width: 992px) {
+    #template1 {
+        .technology-skill {
+            ul {
+                li {
+                    .technology-skill-item__icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }

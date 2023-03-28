@@ -1,0 +1,1 @@
+start cmd.exe /k "cls && php start_app.php"

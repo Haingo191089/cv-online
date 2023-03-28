@@ -1,0 +1,55 @@
+#cv-setting-page {
+    .switch-size-lg {
+        height: 1.5rem;
+        width: 3rem;
+    }
+
+    #contract {
+        .contract__list {
+            transition: height 0.5s;
+            overflow: hidden;
+            height: 0;
+            padding: 0;
+
+            .contract-item {
+                cursor: move;
+
+                & + .contract-item {
+                    margin-top: 1rem;
+                }
+
+                .contract-choose-icon {
+                    border: 1px dashed black;
+                    padding: 0.25rem;
+                    cursor: pointer;
+                }
+
+                .contract-icon-remove {
+                    height: 25px;
+                    cursor: pointer;
+                }
+
+                .contract-icon-preview {
+                    height: 25px;
+                }
+            }
+
+            &.show {
+                height: auto;
+                padding: 1rem;
+
+            }
+        }
+    }
+}
+
+.choose-icon-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--color-grey);
+    overflow: hidden;
+
+    &.active {
+        border: 2px solid black;
+    }
+}
